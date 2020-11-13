@@ -3,7 +3,7 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 
-def weibo(Account,Password,Title,Content):
+def toutiao(Account,Password,Title,Content):
     def is_element_exist(css):
         s = driver.find_elements_by_css_selector(css_selector=css)
         if len(s) == 0:

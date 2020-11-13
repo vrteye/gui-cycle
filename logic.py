@@ -1,5 +1,6 @@
 import random
 from methods import *
+from toutiao import *
 # 建立映射关系储存到变量，生成列表
 # url地址
 url_zm_toutiao = 'TW/ZM/zm_toutiao/zm_toutiao_test.txt'     # 头条地址
@@ -69,4 +70,4 @@ for j in range(num):
             # print(W_2d)
             zh = [i][0][0]  # 账号
             ma = [i][0][1]  # 密码
-            print('账号：', zh, '密码：', ma, '内容：', str_W_Con)
+            # print('账号：', zh, '密码：', ma, '内容：', str_W_Con)
