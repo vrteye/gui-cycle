@@ -1,156 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>310</width>
-    <height>233</height>
+    <width>331</width>
+    <height>240</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Form</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>0</y>
-      <width>101</width>
-      <height>201</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="clicked" name="pushButton">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>160</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>OK</string>
-     </property>
-    </widget>
-    <widget class="QWidget" name="widget" native="true">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>70</y>
-       <width>91</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <widget class="shuru" name="textEdit">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>10</y>
-        <width>41</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>20</y>
-        <width>54</width>
-        <height>12</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>楷体</family>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>次数：</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>73</width>
-       <height>40</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QRadioButton" name="radioButton_4">
-        <property name="text">
-         <string>今日头条</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_3">
-        <property name="text">
-         <string>新浪微博</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </widget>
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>191</width>
-      <height>141</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QRadioButton" name="radioButton1">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>310</width>
-     <height>23</height>
+     <x>230</x>
+     <y>30</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>今日头条</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>60</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>新浪微博</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label1">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>120</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Num：</string>
+   </property>
+   <property name="buddy">
+    <cstring>lineEdit1</cstring>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit1">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>110</y>
+     <width>41</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QTextBrowser" name="textBrowser1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>181</width>
+     <height>201</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton1">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>190</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>clicked</class>
-   <extends>QPushButton</extends>
-   <header location="global">clicked.h</header>
-   <slots>
-    <slot>slot1()</slot>
-   </slots>
-  </customwidget>
-  <customwidget>
-   <class>shuru</class>
-   <extends>QTextEdit</extends>
-   <header location="global">shuru.h</header>
-   <slots>
-    <signal>signal1()</signal>
-    <slot>slot1()</slot>
-   </slots>
-  </customwidget>
- </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton1</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit1</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>282</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>132</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

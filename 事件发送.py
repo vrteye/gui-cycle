@@ -7,7 +7,7 @@ class Example(QMainWindow):
         self.initUI()
 
     def initUI(self):
-        btn1 = QPushButton("按钮老大", self)
+        btn1 = QPushButton("按钮老大1", self)
         btn1.move(30, 50)
         btn2 = QPushButton("按钮老二", self)
         btn2.move(150, 50)
